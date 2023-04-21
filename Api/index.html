@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<title>Encurtador</title>
+	<link rel="stylesheet" href="https://unpkg.com/mvp.css">
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Encurtador de URL</h1>
+			<p>
+				Informe uma URL para ser encurtada.
+			</p>
+		</header>
+		<section id="urlForm">
+			<form enctype="application/x-www-form-urlencoded" method="POST" action="/encurtar">
+				<label for="url">
+					URL
+				</label>
+				<input type="url" name="url" />
+				<button type="submit">Encurtar</button>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
