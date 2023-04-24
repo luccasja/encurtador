@@ -22,6 +22,7 @@ namespace Api.Repositorio
 			var novaUrl = new UrlEncurtada
 			{
 				Url = HttpUtility.UrlDecode(urlCompleta),
+				DataCriacao = DateTime.Now,
 			};
 
 			_contexto.UrlEncurtadas?.Add(novaUrl);
